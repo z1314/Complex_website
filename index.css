@@ -93,7 +93,9 @@ color: white;
 
 .main{
     height: 100%;
+    padding-top: 80px;
     overflow: hidden;
+    box-sizing: border-box;
     background-color: #ffffff;
 }
 .main figure{
@@ -102,6 +104,7 @@ color: white;
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 999;
     padding: 18px 0 ;
 }
 .main figure >img{
@@ -122,11 +125,16 @@ color: white;
 }
 
 .message{
+    width: 100%;
     height:79px;
     padding-left: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
     border-bottom: 1px solid #e6e9ec;
     color: black;
     line-height: 79px;
+   background-color:  gray;
 }
 .content{
     height: 100%;
@@ -204,8 +212,7 @@ color: white;
 .container{
     width: 100%;
     height: 100%;
-    /* overflow: hidden; */
-    /* background-color: red; */
+
 }
 .container_top{
     box-sizing: border-box;
@@ -225,11 +232,93 @@ color: white;
     margin-top: 20px;
     margin-right: 30px;
 }
-.container_top_right >img{
-
+.container_content{
+    padding: 30px;
+}
+.tuesday_content >li{
+    margin-bottom: 20px;
+}
+.tuesday_img_div{
+    float: left;
+}
+.tuesday_div{
+    overflow: hidden;
+    color: black;
+    padding-left: 10px;
+}
+.tuesday_div span{
+    font-size: 10px;
+    color: #a7b1bf;
+}
+.tuesday_div >p{
+    color: #767a82;
+    margin-top: 5px;
+}
+.xian{
+    width: 100%;
+    height: 12px;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.xian_left{
+    float: left;
+    height: 0;
+    width: calc(50% - 45px);
+    border: 1px solid #d9dde3;
+    margin-top: 5px;
+}
+.xian_content{
+    float: left;
+    width: 90px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+    color: #7f8fa4;
+    /* background-color: red; */
+}
+.xian_right{
+    float: right;
+    height: 0;
+    width: calc(49% - 45px);
+    border: 1px solid #d9dde3;
+    margin-top: 5px;
+}
+.new_message_img{
+    margin-top: 20px;
+}
+.xian_new_left{
+    color: #2399f1;
+}
+.xian_new_content{
+    float: left;
+    width: 90px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+    color: #2399f1;
+}
+.xian_new_right{
+    color: #2399f1;
+}
+.new_message,.other{
+    margin-top: 20px;
 }
 
-.afterfix::after{
+.add{
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+}
+.add >img{
+    float: left;
+}
+.add >p{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    overflow: hidden;
+}
+.clearfloat::after{
     content: '';
     display: block;
     height: 0;
