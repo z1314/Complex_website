@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* html,body{
+            min-height: 500px;
+        } */
+        .grandfather{
+            /* ming-height不会主动触发，只有当设置高度并小于300px时，这个条件才会触发，子元素中的width：100%才有效果 */
+            min-height: 300px;
+            height: 100px;
+            width: 600px;
+            border: 1px solid blue;
+        }
+        .father{
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+        .top{ 
+            width: 400px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .bottom{
+            width: 60%;
+            height: 100%;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class='grandfather'>
+        <div class="father">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+   
+</body>
+</html>

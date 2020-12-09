@@ -2,9 +2,13 @@
     说明：
 
 最左侧一列要求自适应浏览器高度，左上面4个按钮相对浏览器左上角固定位置，左下方两个按钮相对浏览器左下角固定位置
+
 左侧第二列(蓝色背景色)导航列固定宽度，高度也是自适应浏览器高度，最下面的Monthly Goals部分的内容相对浏览器下边固定位置
+
 整个白色区域自适应宽度，右上方的人脸，名字部分相对浏览器右上角固定位置
+
 白色区域左侧列固定宽度，右侧列自适应宽度
+
 要求：
 
 代码风格符合某种编码规范
@@ -17,8 +21,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complex_website</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    
+    <div class="wrap">
+        <!-- aside模块 -->
+        <div class="aside">
+            <img src="./images/header01.png" alt="#">
+            <img src="./images/header02.png" alt="#">
+            <img src="./images/header03.png" alt="#">
+            <img src="./images/header04.png" alt="#">
+
+            <img src="./images/header05.png" alt="#">
+            <img src="./images/nav01.png" alt="#">
+        </div>
+        <!-- menu模块 -->
+        <div class="menu">
+            <nav class="menu_nav_bottom">
+                <h3><span>MENU</span><img class="nav_topimg" src="./images/nav01.png" alt="#"></h3>
+                <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Sales</a><img class="nav_topimg" src="./images/nav02.png" alt=""></li>
+                    <li><a href="#">Your Staff</a></li>
+                    <li><a href="#">Analylics & Targeting</a></li>
+                    <li><a href="#">What`s New</a></li>
+                </ul>
+            </nav>
+            <nav class="menu_nav_bottom">
+                <h3><span>YOUR PRODUCTS</span><img class="nav_topimg"  src="./images/nav01.png" alt="#"></h3>
+                <ul>
+                    <li><img src="./images/nav03.png" alt="#"><a href="#" class="menu_nav2_a">Books</a></li>
+                    <li><img src="./images/nav03.png" alt="#"><a href="#" class="menu_nav2_a">Tutorals</a></li>
+                    <li><img src="./images/nav03.png" alt="#"><a href="#" class="menu_nav2_a">Stocks</a></li>
+                    <li><img src="./images/nav03.png" alt="#"><a href="#" class="menu_nav2_a">Infographics</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3><span>DASHBOARD</span><img class="nav_topimg" src="./images/nav01.png" alt="#"></h3>
+                <ul>
+                    <li><a href="#">Messages</a><img class="nav_topimg" src="./images/nav02.png" alt="#"></li>
+                    <li><a href="#">Connections</a></li>
+                    <li><a href="#">Integrations</a><img class="nav_topimg" src="./images/nav04.png" alt="#"></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">App Settings</a></li>
+                </ul>
+            </nav>
+            <div class="menu_bottom_fixed">
+                <p><span>Monthly Goals</span><span>$580/$3200</span></p>
+                <progress value="3" max="10"></progress>
+            </div>
+        </div>
+        <!-- main模块 -->
+        <div class="main">
+            <figure>
+                <img src="./images/column01.png" alt="#">
+                <span><mark>Jordan J.</mark><br><span>Administrator</span></span>
+                <span>▽</span>
+            </figure>
+            <div class="message">Messages</div>
+
+            <div class="content">
+                <!-- search -->
+                <div class="search">
+                    <div class="search_top">
+                        <input type="text"><a href="">搜索</a>
+                    </div>
+                    <ul class="search_content afterfix">
+                        <li class="search_content_li">
+                            <div class="search_content_li_top">
+                                <div><img src="./images/column01.png" alt="#"></div>
+                                <div>
+                                    <p><span class="dian">·</span><span class="search_topname">Bessie Berry</span></p>
+                                    <p class="search_grayname">Twitter</p>
+                                </div>
+                            </div>
+                            <div>I pay for the 4Mb/sec down 512 Kb/sec up service from O2.In fact ,it`s relatively quick,and stable</div>
+                        </li>
+                        <li class="search_content_li">
+                            <div class="search_content_li_top">
+                                <div><img src="./images/column01.png" alt="#"></div>
+                                <div>
+                                    <p><span class="dian">·</span><span>Bessie Berry</span></p>
+                                    <p class="search_grayname">Twitter</p>
+                                </div>
+                            </div>
+                            <div>I pay for the 4Mb/sec down 512 Kb/sec up service from O2.In fact ,it`s relatively quick,and stable</div>
+                        </li>
+                        <li class="search_content_li">
+                            <div class="search_content_li_top">
+                                <div><img src="./images/column01.png" alt="#"></div>
+                                <div>
+                                    <p><span class="dian">·</span><span>Bessie Berry</span></p>
+                                    <p class="search_grayname">Twitter</p>
+                                </div>
+                            </div>
+                            <div>I pay for the 4Mb/sec down 512 Kb/sec up service from O2.In fact ,it`s relatively quick,and stable</div>
+                        </li>
+                        <li class="search_content_li">
+                            <div class="search_content_li_top">
+                                <div><img src="./images/column01.png" alt="#"></div>
+                                <div>
+                                    <p><span class="dian">·</span><span>Bessie Berry</span></p>
+                                    <p class="search_grayname">Twitter</p>
+                                </div>
+                            </div>
+                            <div>I pay for the 4Mb/sec down 512 Kb/sec up service from O2.In fact ,it`s relatively quick,and stable</div>
+                        </li>
+                        <li class="search_content_li">
+                            <div class="search_content_li_top">
+                                <div><img src="./images/column01.png" alt="#"></div>
+                                <div>
+                                    <p><span class="dian">·</span><span>Bessie Berry</span></p>
+                                    <p class="search_grayname">Twitter</p>
+                                </div>
+                            </div>
+                            <div>I pay for the 4Mb/sec down 512 Kb/sec up service from O2.In fact ,it`s relatively quick,and stable</div>
+                        </li>
+                        <li class="search_content_li">
+                            <div class="search_content_li_top">
+                                <div><img src="./images/column01.png" alt="#"></div>
+                                <div>
+                                    <p><span class="dian">·</span><span>Bessie Berry</span></p>
+                                    <p class="search_grayname">Twitter</p>
+                                </div>
+                            </div>
+                            <div>I pay for the 4Mb/sec down 512 Kb/sec up service from O2.In fact ,it`s relatively quick,and stable</div>
+                        </li>
+                        <li class="search_content_li">
+                            <div class="search_content_li_top">
+                                <div><img src="./images/column01.png" alt="#"></div>
+                                <div>
+                                    <p><span class="dian">·</span><span>Bessie Berry</span></p>
+                                    <p class="search_grayname">Twitter</p>
+                                </div>
+                            </div>
+                            <div>I pay for the 4Mb/sec down 512 Kb/sec up service from O2.In fact ,it`s relatively quick,and stable</div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- container -->
+                <div class="container">
+                    <div class="container_top">
+                        <div class="container_top_left">Bessie Berry</div>
+                        <div class="container_top_right">
+                            <img src="./images/column02.png" alt="#">
+                            <img src="./images/column03.png" alt="#">
+                            <img src="./images/column04.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="container_content">
+                        <section class="container_content_one">
+                            <div>
+                                
+                            </div>
+                            <div></div>
+                        </section >
+                        <section class="container_content_one">
+                            <div></div>
+                            <div></div>
+                        </section>
+                        <section class="container_content_one">
+                            <div></div>
+                            <div></div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </body>
 </html>
